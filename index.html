@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Business Desk</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .nav-item {
+            text-align: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 6px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .nav-links i {
+            font-size: 20px;
+            margin-bottom: 4px;
+            transition: transform 0.3s;
+        }
+
+        .fa-instagram {
+            color: #E1306C;
+        }
+
+        .fa-youtube {
+            color: #FF0000;
+        }
+
+        .fa-envelope {
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .container h2 {
+            color: black;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .container p {
+            max-width: 700px;
+            margin: 20px auto;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .courses-title {
+            color: black;
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 60px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            padding: 25px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            animation: pulse3D 2s infinite ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: black;
+        }
+
+        .coming-soon {
+            margin-top: 10px;
+            display: inline-block;
+            background-color: #ffc107;
+            color: #000;
+            padding: 5px 12px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        @keyframes pulse3D {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                margin-top: 10px;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-section">
+        <img src="Black Logo.png" alt="Business Desk Logo">
+        <h1>Business Desk</h1>
+    </div>
+    <div class="nav-links">
+        <div class="nav-item">
+            <a href="https://www.instagram.com/business_desk_?igsh=MWJ0dW5meDZsOXRiaQ==" target="_blank">
+                <i class="fab fa-instagram"></i>
+                Instagram
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="https://youtube.com/@business_desk1?si=1zzEu7z2ZA4DFkTD" target="_blank">
+                <i class="fab fa-youtube"></i>
+                YouTube
+            </a>
+        </div>
+        <div class="nav-item">
+            <a href="mailto:businessdesk1100@gmail.com">
+                <i class="fas fa-envelope"></i>
+                Email
+            </a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <h2>ABOUT BUSINESS DESK</h2>
+    <p>
+        Business Desk is a leading business education company dedicated to empowering individuals and professionals with practical knowledge, strategies, and tools to excel in the business world. Whether you're starting a new venture or growing your skills, we're here to guide your journey to success.
+    </p>
+
+    <div class="courses-title">OUR COURSES</div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>FREE PDF</h3>
+            <div class="coming-soon">Coming Soon</div>
+        </div>
+        <div class="card">
+            <h3>FREE VIDEO COURSE</h3>
+            <div class="coming-soon">Coming Soon</div>
+        </div>
+        <div class="card">
+            <h3>PREMIUM COURSE</h3>
+            <div class="coming-soon">Coming Soon</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
